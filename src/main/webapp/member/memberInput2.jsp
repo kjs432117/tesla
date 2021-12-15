@@ -89,26 +89,20 @@ font-size : 25px;
   letter-spacing: 2px;
 }
 
-
-
-
-
-
 </style>
 <body>
-
-
-<a href="../MainPage2.jsp"style="text-decoration: none">Tesla</a>
+<a href="../MainPage2.jsp"style="text-decoration: none">TESLA</a>
+<h3>회원가입</h3>
 <!-- 입력.jsp -> 컨트롤러 -> 출력.jsp -->
 <form action = '../memberInsert.do' method = 'post'>
 <div class ="login_id">
 ID:<input type='text' name='id'><br>
 </div>
 <div class ="login_pw">
-비밀번호:<input type='text' name='passwd'><br>
+Password:<input type='text' name='passwd'><br>
 </div>
 <div class ="login_name">
-이름:<input type='text' name='name'><br>
+Name:<input type='text' name='name'><br>
 </div>
 <div class ="login_email">
 E-mail:<input type='email' name='mail'><br>

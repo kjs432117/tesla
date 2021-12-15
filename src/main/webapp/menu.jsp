@@ -13,8 +13,8 @@ text-align : center;
 
 li{
 display : inline-block;
-width : 100px;
 font-weight: bolder;
+
 
 border-radius: 35%;
 margin : 15px;
