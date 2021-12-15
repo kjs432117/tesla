@@ -6,13 +6,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.dev.service.MemberService;
-import com.dev.vo.MemberVO;
+import com.tesla.service.MemberService;
+import com.tesla.vo.MemberVO;
 
 public class MemberDeleteController implements Controller {
 
 	@Override
-	public void excute(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	public void execute(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		//삭제작업 결과.jsp
 		String id = req.getParameter("id");
 		

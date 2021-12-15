@@ -2,7 +2,7 @@ package com.tesla.service;
 
 import java.util.List;
 
-import com.dev.dao.MemberDAO;
+import com.tesla.dao.MemberDAO;
 import com.tesla.vo.MemberVO;
 
 public class MemberService {

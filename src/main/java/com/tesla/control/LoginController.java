@@ -13,7 +13,7 @@ import com.tesla.vo.MemberVO;
 public class LoginController implements Controller {
 
 	@Override
-	public void excute(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	public void execute(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		String id = req.getParameter("id");
 		String pass = req.getParameter("passwd");
 		
