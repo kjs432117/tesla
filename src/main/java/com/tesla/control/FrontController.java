@@ -25,7 +25,12 @@ public class FrontController extends HttpServlet{
 		list.put("/memberDelete.do", new MemberDeleteController());
 		list.put("/login.do", new LoginController());
 		list.put("/logout.do", new LogoutController());
-		//11:22 daeun 수정
+		//11:22 daeun �닔�젙
+		
+		//kyungil
+		list.put("/boardList.do", new BoardListController());
+		list.put("/boardInsert.do", new BoardInsertController());
+		
 	}
 	
 	
