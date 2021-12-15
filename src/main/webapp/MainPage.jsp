@@ -2,14 +2,10 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<style>
-h3{
-text-align : center;
-}
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
       * {
   margin: 0;
   padding: 0;
@@ -113,23 +109,11 @@ text-align : center;
   from {opacity: .4}
   to {opacity: 1}
 }
-
-</style>
-<body>
-	<%
-	String id = (String) session.getAttribute("id");
-	if (id == null) {
-	%>
-	<jsp:include page="menu.jsp"></jsp:include>
-	<%@ include file="footer.jsp"%>
-	<%response.sendRedirect("MainPage.jsp"); %>
-	
-	<%
-	} else {
-	%>
-	<jsp:include page="menu2.jsp"></jsp:include>
-	<h3><%=session.getAttribute("name") %>님, 환영합니다!!</h3>
-	<div class="slideshow-container">
+    </style>
+  </head>
+  <body>
+  	<jsp:include page="menu.jsp"></jsp:include>
+    <div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
@@ -170,25 +154,10 @@ text-align : center;
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span><br>
-	
-	<%@ include file="footer.jsp"%>
-	 </div>
+      
+      <%@ include file="footer.jsp" %>
+    </div>
     <script src="jsFile.js"></script>
-	<%
-	}
-	%>
-	
-	
-	<%
-	if(id != null && id.equals("admin")){
-	%>
-	<a href='member/memberInput.jsp'style="text-decoration: none">상품등록</a>
-	<a href='memberList.do'style="text-decoration: none">상품목록</a> 
-	<a href='member/memberSearch.jsp'style="text-decoration: none">상품검색</a>
-	<a href='member/memberUpdate.jsp'style="text-decoration: none">상품수정</a>
-	<a href='member/memberDelete.jsp'style="text-decoration: none">상품삭제</a>
-	<%
-	}
-	%>
-</body>
+  </body>
+  
 </html>
