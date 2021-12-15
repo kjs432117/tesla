@@ -28,6 +28,9 @@ public class FrontController extends HttpServlet{
 		list.put("/login.do", new LoginController());
 		list.put("/logout.do", new LogoutController());
 		//11:22 daeun 수정
+		
+		
+		
 	}
 	
 	
