@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.dev.service.MemberService;
-import com.dev.vo.MemberVO;
+import com.tesla.service.MemberService;
+import com.tesla.vo.MemberVO;
 
 public class LoginController implements Controller {
 
