@@ -32,7 +32,7 @@ data :{
 
 </head>
 <body>
-	<%@ include file="../menu.jsp" %>
+	
 	<img alt="" src="">
 	<a href="boardList.do">게시판은 숨어버림</a><br>
 	
