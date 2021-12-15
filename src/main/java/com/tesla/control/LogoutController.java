@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 public class LogoutController implements Controller {
 
 	@Override
-	public void excute(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	public void execute(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 			
 		HttpSession session = req.getSession();
 		session.invalidate();
