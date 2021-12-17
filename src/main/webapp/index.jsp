@@ -123,12 +123,12 @@ text-align : center;
 	<jsp:include page="menu.jsp"></jsp:include>
 	<%@ include file="footer.jsp"%>
 	<%response.sendRedirect("MainPage.jsp"); %>
-	
 	<%
 	} else {
 	%>
 	<jsp:include page="menu2.jsp"></jsp:include>
 	<h3><%=session.getAttribute("name") %>님, 환영합니다!!</h3>
+	
 	<div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
@@ -170,9 +170,9 @@ text-align : center;
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span><br>
-	
 	<%@ include file="footer.jsp"%>
 	 </div>
+	
     <script src="jsFile.js"></script>
 	<%
 	}
@@ -182,11 +182,11 @@ text-align : center;
 	<%
 	if(id != null && id.equals("admin")){
 	%>
-	<a href='member/memberInput.jsp'style="text-decoration: none">상품등록</a>
-	<a href='memberList.do'style="text-decoration: none">상품목록</a> 
-	<a href='member/memberSearch.jsp'style="text-decoration: none">상품검색</a>
-	<a href='member/memberUpdate.jsp'style="text-decoration: none">상품수정</a>
-	<a href='member/memberDelete.jsp'style="text-decoration: none">상품삭제</a>
+	<a href='car/carInput.jsp'style="text-decoration: none">상품등록</a><!-- carInsert -->
+	<a href='memberList.do'style="text-decoration: none">상품목록</a> <!-- carList -->
+	<a href='member/memberSearch.jsp'style="text-decoration: none">상품조회</a> <!-- 회원검색 하는거를 car로바꿔서 사용 -->
+	<a href='member/memberUpdate.jsp'style="text-decoration: none">상품수정</a>	<!-- 이건새로만들어야함 -->
+	<a href='member/memberDelete.jsp'style="text-decoration: none">상품삭제</a>	<!-- 이것도 마찬가지로 car테이블로바꿔서 사용 -->
 	<%
 	}
 	%>

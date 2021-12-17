@@ -27,7 +27,7 @@ padding-bottom: 10px;
 <body>
 
 	<ul>
-	<li><a href="MainPage2.jsp" style="text-decoration: none" id="babo">TESLA</a></li>
+	<li><a href="MainPage.jsp" style="text-decoration: none" id="babo">TESLA</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/ModelS.jsp' style="text-decoration: none">Model S</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/Model3.jsp'style="text-decoration: none">Model 3</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/ModelX.jsp'style="text-decoration: none">Model X</a></li>

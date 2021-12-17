@@ -88,7 +88,6 @@ font-size : 25px;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
-
 </style>
 <body>
 <a href="../MainPage2.jsp"style="text-decoration: none">TESLA</a>

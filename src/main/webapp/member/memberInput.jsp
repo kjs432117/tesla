@@ -18,12 +18,12 @@
 	}else{
 		
 	%>
-<h3><%=session.getAttribute("name") %>님,환영합니다.</h3>
-<a href="../MainPage2.jsp">첫페이지로</a>
+
+<a href="../MainPage2.jsp">TESLA</a>
 <!-- 입력.jsp -> 컨트롤러 -> 출력.jsp -->
-<form action = '../memberInsert.do' method = 'post'>
+<form action = '../memberInsert.do' method = 'post'> <!-- 여기 carInsert 로 바꿔주고 -->
 ID:<input type='text' name='id'><br>
-비밀번호:<input type='text' name='passwd'><br>
+비밀번호:<input type='text' name='passwd'><br>  <!-- 4개는 다 carDAO 에연결될수있도록  -->
 이름:<input type='text' name='name'><br>
 E-mail:<input type='email' name='mail'><br>
 <input type='submit' value='가입'>

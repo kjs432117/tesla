@@ -8,17 +8,18 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+h3{
+text-align : center;
+font-weight : bolder;
+}
+</style>
 <body>
 <a href='index.jsp'>첫페이지</a>
 <%	
 	MemberVO vo =(MemberVO)request.getAttribute("member");
 %>
-<h3>입력한 아이디 : <%=vo.getId() %></h3>
-<h3>입력한 이름 : <%=vo.getName() %></h3>
-<h3>입력한 비번 : <%=vo.getPasswd() %></h3>
-<h3>입력한 이메일 : <%=vo.getMail() %></h3>
-
-
+<h3><%=vo.getId() %>님 회원가입 감사합니다!!</h3>
 
 </body>
 </html>

@@ -6,9 +6,6 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-h3{
-text-align : center;
-}
 form{
 text-align : center;
 display : flex;
@@ -21,12 +18,15 @@ border-radius: --px;
 box-shadow: -px -px -px color;
 letter-spacing: 2px;
 }
+
 </style>
 <link rel="stylesheet" href="./login3.css">
 </head>
 <body>
+
 <jsp:include page="menu.jsp"></jsp:include>
-<form action='login.do' method='post'>
+
+<form action='login.do' method='post'class="loginForm">
 <div class="login_id">
 <input type='text' name='id' placeholder="ID"><br>
 </div>

@@ -35,7 +35,7 @@ public class MemberVO {
 	public String toString() {
 		return "MemberVO [id=" + id + ", passwd=" + passwd + ", name=" + name + ", mail=" + mail + "]";
 	}
-	
+
 	
 	
 }

@@ -11,8 +11,8 @@
 	String id = (String) request.getAttribute("rid");
 	
 %>
-<a href='../index.jsp'>첫 페이지</a>
-<h3>회원 수정 정보</h3>
+<a href='MainPage.jsp'>첫 페이지</a>
+<h3>수정 완료 되었습니다!</h3>
 <table>
 		<tr>
 			<th>회원아이디</th>
