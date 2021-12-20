@@ -1,6 +1,7 @@
 package com.tesla.control;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -24,14 +25,17 @@ public class LoginController implements Controller {
 		HttpSession session = req.getSession();
 		
 		   if(vo !=null) {
-	
+			   
 			session.setAttribute("id",vo.getId());
 			session.setAttribute("name", vo.getName());
 			
 			req.getRequestDispatcher("index.jsp").forward(req, res);
 		}else {
 			//login
-			req.getRequestDispatcher("login.jsp").forward(req, res);
+			res.setContentType("text/html; charset=UTF-8"); 
+	         PrintWriter out = res.getWriter(); 
+	         out.println("<script>alert('아이디 또는 비밀번호가 틀렸습니다.'); location.href='login.jsp';</script>");
+	         out.flush();
 		}
 		
 

@@ -33,7 +33,7 @@ padding-bottom: 10px;
 	<li><a href='<%=request.getContextPath()%>/Model/ModelX.jsp'style="text-decoration: none">Model X</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/ModelY.jsp'style="text-decoration: none">Model Y</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/Cybertruck.jsp'style="text-decoration: none">Cybertruck</a></li>
-	<li><a href="login.do"style="text-decoration: none">로그인</a><br></li>
+	<li><a href="login.jsp"style="text-decoration: none">로그인</a><br></li>
 	</ul>
 </body>
 </html>
