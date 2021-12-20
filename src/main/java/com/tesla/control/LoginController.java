@@ -29,7 +29,10 @@ public class LoginController implements Controller {
 			session.setAttribute("id",vo.getId());
 			session.setAttribute("name", vo.getName());
 			
-			req.getRequestDispatcher("index.jsp").forward(req, res);
+			res.setContentType("text/html; charset=UTF-8"); 
+	         PrintWriter out = res.getWriter(); 
+	         out.println("<script>alert('로그인 되었습니다.'); location.href='index.jsp';</script>");
+	         out.flush();
 		}else {
 			//login
 			res.setContentType("text/html; charset=UTF-8"); 

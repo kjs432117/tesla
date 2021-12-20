@@ -1,6 +1,7 @@
 package com.tesla.control;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +16,10 @@ public class LogoutController implements Controller {
 		HttpSession session = req.getSession();
 		session.invalidate();
 		
-		req.getRequestDispatcher("index.jsp").forward(req, res);
+		res.setContentType("text/html; charset=UTF-8"); 
+        PrintWriter out = res.getWriter(); 
+        out.println("<script>alert('로그아웃 되었습니다.'); location.href='in.jsp';</script>");
+        out.flush();
 
 	}
 
