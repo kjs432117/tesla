@@ -34,7 +34,7 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: auto%;
   margin-top: -22px;
   padding: 16px;
   color: white;
@@ -143,8 +143,7 @@
 
 
       <!-- Next and previous buttons -->
-      <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+     
     </div>
     <br/>
 

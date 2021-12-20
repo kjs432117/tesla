@@ -159,8 +159,7 @@ text-align : center;
 
 
       <!-- Next and previous buttons -->
-      <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+      
     </div>
     <br/>
 
@@ -182,11 +181,8 @@ text-align : center;
 	<%
 	if(id != null && id.equals("admin")){
 	%>
-	<a href='car/carInput.jsp'style="text-decoration: none">상품등록</a><!-- carInsert -->
-	<a href='memberList.do'style="text-decoration: none">상품목록</a> <!-- carList -->
-	<a href='member/memberSearch.jsp'style="text-decoration: none">상품조회</a> <!-- 회원검색 하는거를 car로바꿔서 사용 -->
-	<a href='member/memberUpdate.jsp'style="text-decoration: none">상품수정</a>	<!-- 이건새로만들어야함 -->
-	<a href='member/memberDelete.jsp'style="text-decoration: none">상품삭제</a>	<!-- 이것도 마찬가지로 car테이블로바꿔서 사용 -->
+	<a href='adminAccount.jsp'style="text-decoration: none">회원관리</a>
+	<a href='adminProduct.jsp'style="text-decoration: none">상품관리</a>
 	<%
 	}
 	%>

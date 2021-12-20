@@ -7,11 +7,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+table{
+	border-collapse : collapse; text-align : center;
+}
+
+th, td{ border : 1px solid; padding : 10px 5px;}
+
+th{
+ background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+  color: white;
+}
+table tr{
+ color : violet;
+}
+</style>
 </head>
 <body>
-
-<a href="../index.jsp">첫페이지로</a>
-
+<a href="index.jsp">첫페이지로</a>
 <h3>회원목록</h3>
 <table border="1">
 <thead>
@@ -21,7 +34,6 @@
 <th>이름</th>
 <th>이메일</th>
 </tr>
-
 </thead>
 <tbody>
 <%
