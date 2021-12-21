@@ -41,7 +41,7 @@
 </style>
 </head>
 <body>
-<h3>회원삭제</h3>
+<h3>회원탈퇴</h3>
 <form action='../memberSearch.do' method='get'>
 <div class="login_id">
 ID:<input type='text' name='id'><br>

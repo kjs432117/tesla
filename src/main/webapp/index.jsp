@@ -18,7 +18,7 @@ text-align : center;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
+  max-width: 1440ps;
   max-height: 750px;
   position: relative;
   margin: auto;

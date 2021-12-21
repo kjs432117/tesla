@@ -24,7 +24,7 @@ table tr{
 </style>
 </head>
 <body>
-<a href="index.jsp">첫페이지로</a>
+<a href="index.jsp" style="text-decoration: none">첫페이지로</a>
 <h3>회원목록</h3>
 <table border="1">
 <thead>

@@ -50,7 +50,6 @@ font-weight: bolder;
 </style>
 </head>
 <body>
-<a href="../MainPage.jsp"style="text-decoration: none">TESLA</a>
 <h3>아이디검색</h3>
 <form action='../memberSearch.do' method='get'>
 <div class="login_id">
