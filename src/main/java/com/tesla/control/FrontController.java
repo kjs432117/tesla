@@ -25,12 +25,14 @@ public class FrontController extends HttpServlet{
 		list.put("/memberDelete.do", new MemberDeleteController());
 		list.put("/login.do", new LoginController());
 		list.put("/logout.do", new LogoutController());
-		//11:22 daeun �닔�젙
+		//11:22 daeun 
 		
 		//kyungil
 		list.put("/boardList.do", new BoardListController());
 		list.put("/boardInsert.do", new BoardInsertController());
-		
+		list.put("/boardSearch.do", new BoardSearchController());
+		list.put("/boardUpdate.do", new BoardUpdateController());
+		list.put("/boardDelete.do", new BoardDeleteController());
 	}
 	
 	
@@ -39,9 +41,9 @@ public class FrontController extends HttpServlet{
 		String url = req.getRequestURI();
 		String context = req.getContextPath();
 		String path = url.substring(context.length());
-		System.out.println(path);
 		
 		Controller subCont = list.get(path);
+
 		subCont.execute(req, resp);
 		
 		
