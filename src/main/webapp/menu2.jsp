@@ -31,6 +31,7 @@ padding-bottom: 10px;
 	<li><a href='<%=request.getContextPath()%>/member/memberUpdate.jsp'style="text-decoration: none">Model X</a></li>
 	<li><a href='<%=request.getContextPath()%>/member/memberUpdate.jsp'style="text-decoration: none">Model Y</a></li>
 	<li><a href='<%=request.getContextPath()%>/member/memberUpdate.jsp'style="text-decoration: none">Cybertruck</a></li>
+	<li><a href='<%=request.getContextPath()%>/board.jsp'style="text-decoration: none">임시게시판</a></li>
 	<li><a href="logout.do"style="text-decoration: none">로그아웃</a><br></li>
 	</ul>
 </body>

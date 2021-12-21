@@ -11,16 +11,16 @@
 </head>
 <body>
 
-	<table border='1'>
+	<table>
 		<tbody>
 			<%
 				List<BoardVO> list = (List<BoardVO>) request.getAttribute("boardList");
 				for(BoardVO vo : list) { 
 			%>
 				<tr>
-					<td><%=vo.getTitle() %></td>
 					<td><%=vo.getContent() %></td>
 					<td><%=vo.getNum() %></td>
+					<td><%=vo.getTitle() %></td>
 					<td><%=vo.getId() %></td>
 					<td><%=vo.getDate() %></td>
 				</tr>

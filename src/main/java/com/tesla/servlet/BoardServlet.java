@@ -1,4 +1,4 @@
-package com.tesla.control;
+package com.tesla.servlet;
 
 import java.io.IOException;
 import java.util.List;
@@ -13,18 +13,20 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.tesla.dao.BoardDAO;
-import com.tesla.service.BoardService;
 import com.tesla.vo.BoardVO;
 
-@WebServlet("/BoardListController")
-public class BoardListController extends HttpServlet implements Controller {
+@WebServlet("/BoardServlet")
+public class BoardServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public BoardServlet() {
+        super();
 
-	@Override
-	public void execute(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		JSONObject obj = new JSONObject();
 		BoardDAO dao = new BoardDAO();
-		
 		try {
 			List<BoardVO> list = dao.boardList();
 			JSONArray ary = new JSONArray();
@@ -39,21 +41,16 @@ public class BoardListController extends HttpServlet implements Controller {
 			}
 			obj.put("retCode", "Success");
 			obj.put("retVal", ary);
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			obj.put("reCode", "Fail");
 			obj.put("retVal", e.getMessage());
-		} 
-		
-		res.getWriter().print(obj.toString());
-		
-		String title = req.getParameter("title");
-		String content = req.getParameter("content");
-		String num	= req.getParameter("num");
-		String id = req.getParameter("id");
-		String date = req.getParameter("date");
-		
-		
+		}
+		response.getWriter().print(obj.toString());
 	}
-	
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
 }
