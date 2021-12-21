@@ -26,7 +26,8 @@ padding-bottom: 10px;
 <body>
 <ul>
 	<li><a href="MainPage2.jsp"style="text-decoration: none">TESLA</a></li>
-	<li><a href='<%=request.getContextPath()%>/member/memberInput.jsp'style="text-decoration: none">Model S</a></li>
+	
+	<li><a href="carSearch.do?model_name=Model+S&job=model" style="text-decoration: none">Model S</a></li>
 	<li><a href='<%=request.getContextPath()%>/member/memberSearch.jsp'style="text-decoration: none">Model 3</a></li>
 	<li><a href='<%=request.getContextPath()%>/member/memberUpdate.jsp'style="text-decoration: none">Model X</a></li>
 	<li><a href='<%=request.getContextPath()%>/member/memberUpdate.jsp'style="text-decoration: none">Model Y</a></li>

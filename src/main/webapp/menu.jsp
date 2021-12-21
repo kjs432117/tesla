@@ -23,12 +23,33 @@ padding-bottom: 10px;
 
 
 </style>
+
+<script>
+$(document).ready(onreadyFnc);
+
+
+function onreadyFnc() {
+	$.ajax({
+		url: '../carList.do',
+		method: 'post',
+		dataType:'json',
+		success: loadCarList,
+		error: function(error) {
+			console.log(error);
+			window.alert(`Error: ${error.status}, Message: ${error.statusText}`);
+		}
+	});
+}
+
+</script>
+
 </head>
 <body>
 
 	<ul>
 	<li><a href="MainPage2.jsp" style="text-decoration: none" id="babo">TESLA</a></li>
-	<li><a href='<%=request.getContextPath()%>/Model/ModelS.jsp' style="text-decoration: none">Model S</a></li>
+	
+	<li><a href="carSearch.do?model_name=Model+S&job=model" style="text-decoration: none">Model S</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/Model3.jsp'style="text-decoration: none">Model 3</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/ModelX.jsp'style="text-decoration: none">Model X</a></li>
 	<li><a href='<%=request.getContextPath()%>/Model/ModelY.jsp'style="text-decoration: none">Model Y</a></li>
